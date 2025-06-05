@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YouTube Theme</title>
+        <link rel="stylesheet" type="text/css" href="popup.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <img src="icons/logo.png" alt="YouTube Theme Icon" class="logo">
+            <h1>YouTube Theme</h1>
+            
+            <div class="theme-selector">
+                <label for="themeSelect">Select theme:</label>
+                <select id="themeSelect" class="theme-dropdown">
+                    <option value="black">Black Theme</option>
+                    <option value="anime">Anime Theme</option>
+                    <option value="cosmic">Cosmic Theme</option>
+                </select>
+            </div>
+
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="toggleBtn">
+                    <span class="slider round"></span>
+                </label>
+                <span class="toggle-label">Enable theme</span>
+            </div>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>

@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    background-color: #0f0f0f;
+    color: #f1f1f1;
+    min-width: 300px;
+    min-height: 250px;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.theme-selector {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.theme-selector label {
+    font-size: 0.9em;
+    color: #aaaaaa;
+}
+
+.theme-dropdown {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-dropdown:hover {
+    border-color: #3ea6ff;
+}
+
+.theme-dropdown:focus {
+    outline: none;
+    border-color: #3ea6ff;
+    box-shadow: 0 0 0 2px rgba(62, 166, 255, 0.2);
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.toggle-label {
+    font-size: 0.9em;
+    color: #aaaaaa;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #717171;
+    transition: .4s;
+    border-radius: 28px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #3ea6ff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(22px);
+}
+
+/* Стили для разных тем */
+.theme-black {
+    background-color: #0f0f0f;
+    color: #f1f1f1;
+}
+
+.theme-anime {
+    background-color: #2b2d42;
+    color: #ffd6e0;
+}
+
+.theme-cosmic {
+    background-color: #1a1b26;
+    color: #7aa2f7;
+}
